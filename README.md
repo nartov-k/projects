@@ -1,11 +1,11 @@
 # Data Science Portfolio
 
 ## Introduction
-Welcome to my Data Science Portfolio! This repository contains a series of projects showcasing my skills in data analysis, machine learning, and data visualization.
+Hi, this is Kirill Nartov. Welcome to my Data Science Portfolio! This repository contains a series of projects showcasing my skills in data analysis, machine learning, and data visualization.
 
 ## Projects
 
-### Project 1: [Title]
+### Project 1: [Cross-Market Insurance Customer Prediction (Cross-Market_Pred)]
 - **Objective**: Brief description of what the project aims to achieve.
 - **Data Source**: Where the data comes from and its key characteristics.
 - **Tools Used**: Python, Pandas, Matplotlib, etc.
