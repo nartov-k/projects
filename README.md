@@ -15,13 +15,7 @@ Hi, this is Kirill. Welcome to my Data Science Portfolio! This repository contai
 - Similar structure as Project 1.
 
 ## How to Use
-- Instructions on how to install any necessary libraries and run the Notebooks.
-
-## Visualizations
-- Screenshots or links to visualizations created in the projects.
+- To run the notebooks, you will need Jupyter Notebook software. To install Jupyter, you can use Python's package manager, pip. First, ensure that you have Python installed on your computer. Then, open your command line or terminal and run the following command: `pip install notebook`. This command will install Jupyter Notebook. After installation, you can start Jupyter Notebook by running `jupyter notebook` in your terminal. This will open the Jupyter Notebook interface in your default web browser, where you can run the notebooks.
 
 ## Contact
-Feel free to contact me at [email] for any questions or collaboration opportunities.
-
-## License
-This work is licensed under [license name].
+Feel free to contact me at **nartovk@umich.edu** for any questions or collaboration opportunities.
