@@ -17,7 +17,7 @@ Hi, this is Kirill. Welcome to my Data Science Portfolio! This repository contai
 - **Tools Used**: Python (Numpy, Pandas, Matplotlib, Seaborn, Skikit, Mlxtend).
 - **Outcomes**: *EDA phase*: 1. Conducted Conversion Analysis and formulated a weak point dealers of sight-attractive items should focus on; 2. Analyzed Prices and explained why there is no explicit correlation between price and purchases; 3. Time Series Analysis was conducted to unravel sales patterns over a specific time period; *Model building phase*: 4. Conducted Customer Segmentation (k-means clustering) and formulated recommendations to the e-store on how to use this model; 5. Market Basket Analysis (FP-Growth, Apriori) was applied to uncover the support(frequency) of top products and to find out the association rules.
 
-### Project 3: [Real_Estate Database (Real_Estate_db)]
+### Project 3: [Real Estate Database (Real_Estate_db)]
 - **Objective**: 1. To design a conceptual model (ER diagram) of a potential Database that can be made up of several smaller datasets taken from the real estate company Zillow; 2. To translate a conceptual model into an SQL schema by using DDL Statements; 3. To create a PostgreSQL Database and populate it by using DML Statements; 4. To write SQL queries to analyze the tendencies of the real estate market; 5. To analyze the performance of SQL queries;
 - **Data Source**: The dataset consists of 5 files that were downloaded from the [Zillow website](https://www.zillow.com/research/data/).
 - **Tools Used**: PostgreSQL 13; Python (Numpy, Pandas).
