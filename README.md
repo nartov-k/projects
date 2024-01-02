@@ -7,7 +7,7 @@ Hi, this is Kirill Nartov. Welcome to my Data Science Portfolio! This repository
 
 ### Project 1: [Cross-Market Insurance Customer Prediction (Cross-Market_Pred)]
 - **Objective**: 1. Are there any patterns in the probability of purchase based on EDA and Visualizations? 2. Which ML algorithm provides better predictive results?;
-- **Data Source**: The dataset is obtained from Kaggle (https://www.kaggle.com/datasets/anmolkumar/health-insurance-cross-sell-prediction?resource=download)[link].
+- **Data Source**: The dataset is obtained from [Kaggle](https://www.kaggle.com/datasets/anmolkumar/health-insurance-cross-sell-prediction?resource=download).
 - **Tools Used**: Python, Pandas, Matplotlib, etc.
 - **Findings**: Summarize the main outcomes.
 
