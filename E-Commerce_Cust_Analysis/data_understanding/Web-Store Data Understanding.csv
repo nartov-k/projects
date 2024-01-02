@@ -14,7 +14,7 @@ category_id,Dimension,ID,String,Count,ID of product's category
 category_code,Dimension,Input,String,"Count, Mode","Product's category code name. 
 It is present for meaningful categories and blank for different kinds of accessories."
 brand,Dimension,Input,String,"Count, Mode",Brand name. Can be missed.
-price,Dimension,Input,Numeric,"Count, Median, Mean, St.Dev., Min, Max",Float price of a product. Present.
+price,Measure,Input,Numeric,"Count, Median, Mean, St.Dev., Min, Max",Float price of a product. Present.
 user_id,Dimension,ID,String,Count,Permanent user ID.
 user_session,Dimension,ID,String,Count,"Temporary user's session ID. Same for each user's session. 
 Is changed every time user come back to online store from a long pause."
