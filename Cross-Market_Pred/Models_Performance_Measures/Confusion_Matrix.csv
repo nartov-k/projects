@@ -1,0 +1,17 @@
+﻿Logistic regression,,,,,Decision Tree,,,
+,Predicted Positive,Predicted Negative,"Class Recall, %",,,Predicted Positive,Predicted Negative,"Class Recall, %"
+Actual Positive,47056,53264,0.47,,Actual Positive,84158,16162,0.84
+Actual Negative,39693,60627,0.60,,Actual Negative,12936,87384,0.87
+"Class Precision, %",0.54,0.53,,,"Class Precision, %",0.87,0.84,
+,,,,,,,,
+Random Forest,,,,,Gradient Boosting,,,
+,Predicted Positive,Predicted Negative,"Class Recall, %",,,Predicted Positive,Predicted Negative,"Class Recall, %"
+Actual Positive,85391,14929,0.85,,Actual Positive,77012,23308,0.77
+Actual Negative,9348,90972,0.91,,Actual Negative,8829,91491,0.91
+"Class Precision, %",0.90,0.86,,,"Class Precision, %",0.90,0.80,
+,,,,,,,,
+XGBoost,,,,,,,,
+,Predicted Positive,Predicted Negative,"Class Recall, %",,,,,
+Actual Positive,81770,18550,0.82,,,,,
+Actual Negative,10553,89767,0.89,,,,,
+"Class Precision, %",0.89,0.83,,,,,,
