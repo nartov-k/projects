@@ -1,0 +1,87 @@
+Maven Roasters Data Understanding,,,,,
+,,,,,
+Customer Lookup,,,,,
+9 Columns by 2249 Rows,,,,,
+Column Name,Data Purpose,Data Type,Consolidation Type,Definition,Comments
+customer_id,Dimension,String,Count,Customer ID number,
+home_store,Dimension,String,Count,"Store nearest the customer, or the primary store of use","store is listed as 3, 5, 8 - this relates to the store number in the Store Lookup table"
+customer_first-name,Dimension,String,Count,Customer's full name,"even though the column title is ""first name"" the customer's full name is listed"
+customer_email,Dimension,String,Count,Customer's email address,
+customer_since,Measure,Date,"Mean, Count, Time Difference",Date customer first became a customer,
+loyalty_card_number,Dimension,String,Count,Customer's loyalty card number,10 digit number; several beginning with 0 so it is useful to keep the hyphens 
+birthdate,Dimension,Date,"Mean, Count",Customer's birthdate,
+gender,Dimension,String,Count,Customer's gender,546 people chose not to provide their gender; gender listed as N or None
+birth_year,Dimension,Numeric,"Mean, Count",Customer's birth year,
+,,,,,
+,,,,,
+Employee Lookup,,,,,
+6 Columns by 55 Rows,,,,,
+Column Name,Data Purpose,Data Type,Consolidation Type,Definition,Comments
+staff_id,Dimension,String,Count,Staff ID number,
+first_name,Dimension,String,Count,Staff member's first name,
+last_name,Dimension,String,Count,Staff member's last name,
+position,Dimension,String,Count,Staff member's position within company,"7 positions - CFO, CEO, Head Barista, Coffee Wrangler, Store Manager, Head Roaster, Roaster"
+start_date,Dimension,Date,"Mean, Count, Time Difference",Start date of the staff member,
+location,Dimension,String,Count,Store number the staff member is employed at,"FL could mean they float between stores,  10 location IDs(store IDs) totally used."
+,,,,,
+,,,,,
+Store Lookup,,,,,
+11 Columns by 10 Rows,,,,,
+Column Name,Data Purpose,Data Type,Consolidation Type,Definition,Comments
+store_id,Dimension,String,Count,store ID,"ties to customer lookup, employee lookup, food inventory, and sales by store"
+store_type,Dimension,String,Count,the kind of store,"broken into HQ, warehouse, and retail"
+store_square_feet,Dimension,Numeric(integer),"Count, Mean, Median, Sum",the square footage of store/warehouse,
+store_address,Dimension,Geographic,Count,location of store,
+store_city,Dimension,Geographic,Count,location of store,
+store_state_province,Dimension,Geographic,Count,location of store,All locations within New York state
+store_postal_code,Dimension,Geographic,Count,location of store,
+store_longitude,Dimension,Geographic,Count,location of store,
+store_latitude,Dimension,Geographic,Count,location of store,
+manager,Dimension,String,Count,manager in charge of store,two blanks; the entries are numbers tied to the employee lookup
+Neighorhood,Dimension,String,Count,general location of store,"even though a neighborhood is geographic, it's more subjectively geographic"
+,,,,,
+,,,,,
+Product Lookup,,,,,
+12 Columns by 88 Rows,,,,,
+Column Name,Data Purpose,Data Type,Consolidation Type,Definition,Comments
+product_id,Dimension,String,Count,ID associated with a specific product,ties to sales by store
+product_group,Dimension,String,Count,superset of kinds of items sold in stores,"broken into 5 categories: Add-ons, Merchendise, Beverages, Food, Whole Beans/Teas"
+product_category,Dimension,String,Count,category of products sold in stores,Hierachy: Product_group > Product_category > Product_type > Product
+product_type,Dimension,String,Count,subcategory of products sold in stores,
+product,Dimension,String,Count,product name,
+product_description,Dimension,String,Count,description of products,
+unit_of_measure,Dimension,String ,Count,volume of product sold with specific product ID,"mix of weight lb/oz, liquid oz, pump, and single"
+current_wholesale_price,Dimension,Numeric(decimal),"Mean, Median, Count",how much the store buys the product for,in dollars
+current_retail_price,Dimension,Numeric(decimal),"Mean, Median, Count",how much the store sells the product for,in dollars
+tax_exempt_yn,Dimension,Boolean,Count,whether this is a tax exempt item or not,Y or N
+promo_yn,Dimension,Boolean,Count,whether this is a promotional item or not,Y or N
+new_product_yn,Dimension,Boolean,Count,whether this is a new product or not,Y or N
+,,,,,
+,,,,,
+Food Inventory,,,,,
+"6 Columns by 27,649 Rows",,,,,
+Column Name,Data Purpose,Data Type,Consolidation Type,Definition,Comments
+store_id,Dimension,String,Count,ID of store,tied to store lookup
+baked_date,Dimension,Date,Count,Date goods were baked,
+transaction_date,Dimension,Date,"Count, Median, Difference",Dates goods were sold,
+product_id,Dimension,String,Count,which products were sold,tied to product lookup; all items listed on this sheet are baked goods
+quantity_start_of_day,Dimension,Numeric(integer),"Count, Median, Mean",the quantity of products at start date,
+quantity_sold,Dimension/Measure,,"Count, Median, Mean, Standard Dev",number of products sold,total quantity of sold per store per product_id
+,,,,,"Not suitable to join with ""sales by store"""
+,,,,,
+Sales by Store,,,,,
+"13 Columns by 907,841 Rows",,,,,
+Column Name,Data Purpose,Data Type,Consolidation Type,Definition,Comments
+transaction_id,Dimension,String,Count,"""transaction id"" -> not really... not sure",one transaction id contains multiple rows(product_id) - may not be important to analysis?
+transaction_date,Dimension,Date/Time,Count,date items were sold,
+transaction_time,Dimension,Date/Time,Count,time items were sold,
+store_id,Dimension,String,Count,store the products were sold,from store lookup table
+staff_id,Dimension,String,Count,employee that sold the items ,from staff lookup table
+customer_id,Dimension,String,Count,customer id,from customer lookup table
+instore_yn,Dimension,Boolean,Count,whether order was instore or online,
+order,Dimension,String,Count,Not sure,no understandable reason for specific order numbers - may not be important to analysis?
+line_item_id,Dimension,String,Count,Not sure,no understandable reason for specific line_item_ids - may not be important to analysis?
+product_id,Dimension,String,Count,what product was sold,from product lookup
+quantity_sold,Dimension,Numeric(integer),"Count, Sum, Mean, Median, Mode",the quantity of product sold,"number of these items sold in this transaction, different meaning from ""quantity_sold"" in Food Inventory"
+unit_price,Dimension,Numeric(decimal),"Count, Sum, Mean, Median, Mode",cost of single product sold,"to get the amount of sale, multiply this number by quantity sold"
+promo_item_yn,Dimension,Boolean,Count,whether it’s a promo item or not,
