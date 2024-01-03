@@ -33,7 +33,13 @@ Hi, this is Kirill. Welcome to my Data Science Portfolio! This repository contai
 - **Objective**: 1. To analyze business requirements and constraints; 2. To conduct the exploratory data analysis to formulate recommendations on the items allocation optimization in the storage.
 - **Data Source**: The dataset was provided by [Kohl's Corporation](https://corporate.kohls.com/company/about-kohl-s). It consisted of 6 Excel sheets. The dataset contained 20 columns and 1400 records per sheet.
 - **Tools Used**: 1. Tableau; 2. Tableau Prep Builder.
-- **Outcomes**: The recommendations that can lead to $16K/year savings were formulated. 
+- **Outcomes**: The recommendations that can lead to $16K/year savings were formulated.
+
+### Project 6: Steel Dynamics Financial Analysis (Fin_Analysis)
+- **Objective**: To conduct a financial analysis of Steel Dynamics to statistically examine their financial and business performance compared to their competitors based on the next financial metrics: Contribution Margin Ratio, Operating Leverage Effect, Debt to Equity Ratio, and Financial Leverage.
+- **Data Source**: All financial metrics are available on this [website](https://www.macrotrends.net/).
+- **Tools Used**: Excel. 
+- **Outcomes**: 1. Identified weaknesses in Steel Dynamics' financial performance by running statistical comparison analysis (Hypothesis one-way ANOVA testing) of 4 competitors' financial metrics; 2. Formulated the recommendations for Steel Dynamics based on the findings;
 
 ## How to Use
 - To run the notebooks, you will need Jupyter Notebook software. To install Jupyter, you can use Python's package manager, pip. First, ensure that you have Python installed on your computer. Then, open your command line or terminal and run the following command: `pip install notebook`. This command will install Jupyter Notebook. After installation, you can start Jupyter Notebook by running `jupyter notebook` in your terminal. This will open the Jupyter Notebook interface in your default web browser, where you can run the notebooks.
