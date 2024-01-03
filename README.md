@@ -23,7 +23,7 @@ Hi, this is Kirill. Welcome to my Data Science Portfolio! This repository contai
 - **Tools Used**: PostgreSQL 13; Python (Numpy, Pandas).
 - **Outcomes**: 1. The data was transformed and prepared to populate the database (*data_transformation folder*); 2. The database was created and populated; 3. The tendencies of the real estate market were analyzed by running the corresponding SQL queries against the database; 4. The complexity and performance of queries were analyzed.
 
-### Project 4: [Insurance Policy Purchase Prediction (Purchase_Pred)]
+### Project 4: [Insurance Policy Purchase Prediction (Policy_Purchase_Pred)]
 - **Objective**: 1. To find out what characteristics define a potential customer mostly; 2. To highlight the features of the policy that correlate with a customer's decision to purchase a policy; 3. To build a binary predicting model to forecast the policy purchasing based on the given features;
 - **Data Source**: The dataset was taken from the [Allstate competition on Kaggle](https://www.kaggle.com/c/allstate-purchase-prediction-challenge/data). It contains 25 features and 665K observations.
 - **Tools Used**: SAS Enterprise Miner; Tableau; Tableau Prep.
