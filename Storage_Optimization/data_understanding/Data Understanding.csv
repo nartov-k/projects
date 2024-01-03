@@ -1,0 +1,122 @@
+Column Name,Data Purpose,Data Type,Consolidation Type,Definition,Comments
+Customer Master,,,,,
+1450 rows by 21 columns,,,,,
+,,,,,
+SKU,Dimension,String,Count,"Stock Keeping Unit, unique code to track inventory",
+ITEM_DESCRIPTION,Dimension,String,Count,Item description,
+DCS,Dimension,String,Count,Department code (the first two or three digits) and subclass code(the last four digits),Department Class and SubClass.  This is a kohls specific identifier
+Dept Nm,Dimension,String,Count,Department category name,
+DMA Nm,Dimension,String,Count,Designated Market Area (upper level of Dept),11 categories total
+GC,Dimension,String,Count,It has four categories: N-sort/N-AAA/Biggie/AAA,"N-sort non-sortable item, cannot run on the sorter itself, would not work well in automated, candles 
+N-AAA, non sort, a lot of it, store at palette level not a good candidate 
+Biggie, to large to store in a grey storage tote, small enough that it can be combined with other items, store in manual pick mods
+AAA, whole lot of it, and it is sortable, a lot of depth on SKU
+"
+AVAILABLE_FOR_SALE,Dimension,String,Count,"Availability for sale (Yes, No)",means whether it is on the web currently
+WAMAS BAGGABLE,Dimension,String,Count,"Baggable (0 = No, 1 = Yes)","WAMAS - material handline equipment, entire system in which they work, SAP, the entire system in which they work,"
+WAMAS IS_FRAGILE,Dimension,String,Count,"Fragile (0 = No, 1 = Yes)","WAMAS - material handline equipment, entire system in which they work, SAP, the entire system in which they work,"
+Weight,Dimension,Numeric,Average/ Sum,Item Weight,
+ITEM VOLUME,Dimension,Numeric,Average/ Sum,"Item Volume, equals height*width*length
+",
+ITEM HEIGHT,Dimension,Numeric,Average/ Sum,Item Height,
+ITEM HEIGHT THAT FITS TOTE,Dimension,Numeric,Average/ Sum,Item Width,
+ITEM WIDTH,Dimension,Numeric,Average/ Sum,Item Length,
+ITEM WIDTH THAT FITS TOTE,Dimension,Numeric,Count,Number of units,
+ITEM LENGTH,Dimension,String,Count,Number of units On Order,
+ITEM Length THAT FITS TOTE,Dimension,String,Count,Number of units On Order and On Hand,
+ITEM VOLUME THAT FITS TOTE,Dimension,String,Count,PMDM = Vendor identifier in the host system at corporate,
+WAMAS Units Avail,Dimension,String,Count,,0/Breakeable/Baggable/GII breakable/High value risk/Sortable
+Fashion Units OO,Dimension,String,Count,,0/Breakeable/GII breakable/High value risk/Sortable
+Total OH+OO,Dimension,String,Count,"Legacy building data, not applicable to this project","1/2/3/""N/A""
+can be removed."
+PMDM Vendor,,,,,
+PMDM Flag 1,,,,,
+PMDM Flag 2,,,,,
+"EFC1 Convey Flag (1=Sort, 2=NS/SA, 3=Cage/OVS)",,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+WAMAS Data Set,,,,,
+"1451 rows, 12 columns",,,,,
+SKU,,,,,See FDS table
+ITEM_DESCRIPTION,,,,,See FDS table
+DCS,,,,,See FDS table
+GC,,,,,See FDS table
+AVAILABLE_FOR_SALE,,,,,See FDS table
+BAGGABLE,,,,,See FDS table
+IS_FRAGILE,,,,,See FDS table
+ITEM_VOLUME,,,,,See FDS table
+ITEM_HEIGHT,,,,,See FDS table
+ITEM_WIDTH,,,,,See FDS table
+ITEM_LENGTH,,,,,See FDS table
+WAMAS Units,,,,,See FDS table
+,,,,,
+,,,,,
+Fashion OO Data,,,,,
+"1451 rows, 3 columns",,,,,
+SKU,,,,,See FDS table
+Description,,,,,See FDS table
+Total OO,,,,,See FDS table
+,,,,,
+,,,,,
+PMDM Data,,,,,
+"1450 rows, 14 columns",,,,,
+SKU_NBR,,,,,See FDS table
+SKU_DESC,,,,,See FDS table
+DCS,,,,,See FDS table
+DEPT_NBR,Dimension,String,,Department code = the first two or three digit of DCS,New column
+DEPT_DESC,,,,,See FDS table
+DMA_DESC,,,,,See FDS table
+Weight,,,,,See FDS table
+Volume,,,,,See FDS table
+Length,,,,,See FDS table
+Width,,,,,See FDS table
+Height,,,,,See FDS table
+PMDM_Flag 1,,,,,See FDS table
+PMDM_Flag 2,,,,,See FDS table
+Vendor,,,,,See FDS table
+,,,,,
+,,,,,
+EFC1 WM Attributes,,,,,
+"1443 rows, 21 columns",,,,,
+,,,,Empty Column Name,
+SKU,,,,,See FDS table
+desc,,,,,See FDS table
+Weight,,,,,See FDS table
+Volume,,,,,See FDS table
+Length,,,,,See FDS table
+Width,,,,,See FDS table
+Height,,,,,See FDS table
+Sortable,Dimension,String,Count,"Legacy building data, ""1/2/3"" ","Flag, not applicable to this project."
+PLAT,Dimension,String,Count,Legacy building data,
+Ship_Rest,Dimension,String,Count,"Legacy building data, ""0/2/3""",
+Bin Box,Dimension,String,Count,Two options: Medium or Blank,
+Baggable,Dimension,String,Count,Is the item baggable? Y/N,
+Breakable,Dimension,String,Count,Is the item Breakable? N,"one value only, can be removed"
+Conveyable,Dimension,String,Count,Can the the item be on a convey? Y/N,
+Gift Card,Dimension,String,Count,Is the item a gift card? N,"one value only, can be removed"
+Gift Wrap,Dimension,String,Count,Is the item a gift Wrap? N,"one value only, can be removed"
+Haz,Dimension,String,Count,"Hazardous item, ""Y/N""",
+SA,Dimension,String,Count,"Large bulky items, shipped by itself, non-sortable , two options: 1 or 9",
+DCS,,,,,See FDS table
+Unit Retail Price,Dimension,Numeric,Average/Sum,price per unit,
+,,,,,
+,,,,,
+SKUs_and_Quantities_by_Area_NEW,,,,,
+"8 Rows, 9 Columns",,,,,
+Area ,Dimension,String,Count,"8 Areas in total
+Cuby for automated area
+HV-AAA, high velocity triple AAA, manual pick module 
+HV- BNS, identifying pick module and the floor they are on 
+HV-OVS,  pick mod
+PM- BNS, pick mod
+PM OVS, pick mod",
+SKUs (Unique),Dimension,Numeric,Average/Sum,SKU quantity,
+Units Actual,Dimension,Numeric,Average/Sum,Actual occupied tote,
+Units Capacity,Dimension,Numeric,Average/Sum,Total Capacity for tote,
+Capacity Available,Dimension,Numeric,Average/Sum,Available tote unit for storage,
+Occupied locs,Dimension,Numeric,Average/Sum,Occupied Locations ,
+Total Locs,Dimension,Numeric,Average/Sum,Total Locations,
+Avail Locs,Dimension,Numeric,Average/Sum,Available Locations ,
+Units / Loc,Dimension,Numeric,Average/Sum,Units / Locations for occupied Locations  (Not for planned units / Locations ),"much different by Area, especially for Area ""HV-AAA"""
