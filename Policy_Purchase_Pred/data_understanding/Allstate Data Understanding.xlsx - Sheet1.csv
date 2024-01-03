@@ -1,0 +1,55 @@
+Allstate Data Understanding,,,,,,
+"25 - Columns , 665 250 -> Rows (including Title Rows)",,,,,,
+,,,,,,
+Column Name,Data Purpose,Data Role,Data Type,Consolidation Type,Definition,Comments
+customer_ID,Dimension,ID,String,Count,"A unique identifier for the customer. Represented as a string of numbers which is assigned to each 
+policyholder in the dataset.",
+shopping_pt,Dimension,Input,String,Count,"Unique identifier for the shopping point of a given customer. Can be useful for predicting the 
+policyholder's likelihood of purchasing a policy from Allstate",
+record_type,Measure,Target,String (Boolean),Count,"0=shopping point, 1=purchase point (variable to be predicted). ",It's the target that we are going to predict as a decision (yes/no).
+day,Dimension,Input,String,Count,"Day of the week (0-6, 0=Monday). Can be used to predict any seasonal pattern in the behavior the 
+policy holders",
+time,Dimension,Input,Date/Time,Count/Mean/Time Difference,Time of day (HH:MM). Can be used to better understand time pattern of the policyholders,"For easing the prediction analysis, maybe we should separate 
+this field into several fields (date, time) or even get rid of time."
+state,Dimension,Input,String,Count,State where shopping point occurred.,It's a two-letters code.
+location,Dimension,Input,String,Count,Location ID where shopping point occurred.,We need to change type in Tableau Prep
+group_size,Dimension,Input,Numeric (Integer),Count/Average/Median,"How many people will be covered under the policy (1, 2, 3 or 4), provides information about the size 
+and composition of the policyholder's household",
+homeowner,Dimension,Input,String (Boolean),Count,"Whether the customer owns a home or not (0=no, 1=yes). Binary variable that indicates whether or not 
+the policyholder owns a home",
+car_age,Dimension,Input,Numeric (Integer),Count/Average/Median,Age of the customer’s car. Numerical variable that represents the age of the vehicle in years,
+car_value,Dimension,Input,String,Count,"How valuable was the customer’s car when new. Value of the vehicle associated with the insurance 
+policy at a particular shopping point in time","It's represented in terms of a letter grade system. Maybe we can 
+convert it to a numeric system 0-10 to reduce the number of dummy 
+variables for regression?
+Get dr. Flatto approve"
+risk_factor,Dimension,Input,String,Count,"An ordinal assessment of how risky the customer is (1, 2, 3, 4). This can predictive the likelihood of 
+making an insurance claim","There is a 36% fraction of rows with N/A in this field. What should we do with them?
+We decided to leave it as NA without 0 replacing
+Get dr. Flatto approve"
+age_oldest,Dimension,Input,Numeric (Integer),Count/Average/Median,"Age of the oldest person in customer's group. Its a numerical variable that represents the age of the 
+oldest individual in the policyholder's household. This variable may take on integer values ranging from 18 to 75.","There are some rows that have age_oldest = age_youngest. 
+Maybe it's worth seeing how many rows contain difference 
+between this two fields. If the number of such columns isn't high,
+ there is a sense to substitute both of these columns with one 
+called 'estimated age' that assumes values from one of two 
+initial fields."
+age_youngest,Dimension,Input,Numeric (Integer),Count/Average/Median,"Age of the youngest person in customer’s group. Its a numerical variable that represents the age of the 
+youngest individual in the policyholder's household. This variable may take on integer values ranging from 16 to 75",See comment for field 'age_oldest'. Get dr. Flatto approve
+married_couple,Dimension,Input,String (Boolean),Count,"Does the customer group contain a married couple (0=no, 1=yes). A binary variable that indicates whether 
+the policyholder is part of a married couple.",
+C_previous,Dimension,Input,String,Count,"What the customer formerly had or currently has for product option C (0=nothing, 1, 2, 3,4). A categorical 
+variable that indicates the number of previous insurance coverage the policyholder had.","There is a Null instead of 0 so we need to correct it. Do we need it? 
+I think we need to keep it as NA because we have no proves that all nulls mean 0
+
+Get dr. Flatto approve"
+duration_previous,Dimension,Input,Numeric (Integer),Count/Average/Median,"How long (in years) the customer was covered by their previous insurance company. A continuous variable 
+that represents the number of years of coverage the policyholder had with their previous insurance provider",We need to check it in Tableau Prep
+A,Dimension,Input,String,Count,Represents the various types of insurance coverage options that the policyholder can choose from,We need to set it as categorical variable in Tableau Prep
+B,Dimension,Input,String,Count,Represents the various types of insurance coverage options that the policyholder can choose from,We need to set it as categorical variable in Tableau Prep
+C,Dimension,Input,String,Count,Represents the various types of insurance coverage options that the policyholder can choose from,We need to set it as categorical variable in Tableau Prep
+D,Dimension,Input,String,Count,Represents the various types of insurance coverage options that the policyholder can choose from,We need to set it as categorical variable in Tableau Prep
+E,Dimension,Input,String,Count,Represents the various types of insurance coverage options that the policyholder can choose from,We need to set it as categorical variable in Tableau Prep
+F,Dimension,Input,String,Count,Represents the various types of insurance coverage options that the policyholder can choose from,We need to set it as categorical variable in Tableau Prep
+G,Dimension,Input,String,Count,Represents the various types of insurance coverage options that the policyholder can choose from,We need to set it as categorical variable in Tableau Prep
+cost,Dimension/Measure,Input,Numeric (Integer),Count/Sum/Average/Median,Cost of the quoted coverage options,
