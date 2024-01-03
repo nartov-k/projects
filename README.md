@@ -41,7 +41,7 @@ Hi, this is Kirill. Welcome to my Data Science Portfolio! This repository contai
 - **Tools Used**: Excel. 
 - **Outcomes**: 1. Identified weaknesses in Steel Dynamics' financial performance by running statistical comparison analysis (Hypothesis one-way ANOVA testing) of 4 competitors' financial metrics; 2. Formulated the recommendations for Steel Dynamics based on the findings;
 
-### Project 7: Maven Roasters Cofee Shop BI Analysis (BI_Analysis)
+### Project 7: Maven Roasters Coffee Shop BI Analysis (BI_Analysis_Coffee_Shop)
 - **Objective**: To help a small batch coffee roasting company called Maven Roasters (a fictional name) conduct a business analysis based on their data about customers, employees, stores, and products in order to operate the business more effectively through data-driven business decisions.
 - **Data Source**: This dataset requires a subscription to get acquired, and can only be accessed through the data collection of [Maven Analytics](https://www.linkedin.com/company/maven-analytics/)
 - **Tools Used**: Tableau.
