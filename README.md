@@ -1,12 +1,12 @@
 # Data Science Portfolio
 
 ## Introduction
-Hi, this is Kirill. Welcome to my Data Science Portfolio! This repository contains a series of projects showcasing my skills in data analysis, machine learning, and data visualization.
+Hi, this is Kirill. Welcome to my Data Science Portfolio! This repository contains a series of projects showcasing my skills in **data analysis, machine learning, and data visualization**.
 
 ## Projects
 
-### Project 1: [Cross-Market Insurance Customer Prediction (Cross-Market_Pred)]
-- **Objective**: 1. To find patterns of customer cross-market purchases based on EDA and Visualizations for an insurance company; 2. Prepare the dataset for model building; 3. To find an ML algorithm that provides better binary predictive results out of five: Logarithmic Regression, Decision Tree, Random Forest, Gradient Boosting, and XGBoost.
+### Project 1: [Cross-Market Insurance Policy Purchase Prediction (Cross-Market_Pred)]
+- **Objective**: 1. To find patterns of customer cross-market purchases based on EDA and Visualizations for an insurance company; 2. Prepare the dataset for model building; 3. To find an ML algorithm that provides better binary predictive results out of five: Logistic Regression, Decision Tree, Random Forest, Gradient Boosting, and XGBoost.
 - **Data Source**: The dataset was obtained from [Kaggle](https://www.kaggle.com/datasets/anmolkumar/health-insurance-cross-sell-prediction?resource=download). It contains 12 attributes and 381K observations.
 - **Tools Used**: 1. Python (Numpy, Pandas, Matplotlib, Seaborn, Skikit); 2. Tableau.
 - **Outcomes**:  1. The list of insights resulting from the EDA phase was found (*EDA_Visualizations folder*). 2. The dataset was enriched with 3 new features, one feature was aggregated for the sake of data reduction, and the dataset was resampled to avoid negative bias during the model-building phase; 3. The random Forest model was the best-performing one out of 5 tested algorithms based on the ROC_AUC, accuracy, and precision measures. (*Models_Permormance_Measures folder*).
@@ -22,6 +22,12 @@ Hi, this is Kirill. Welcome to my Data Science Portfolio! This repository contai
 - **Data Source**: The dataset consists of 5 files that were downloaded from the [Zillow website](https://www.zillow.com/research/data/).
 - **Tools Used**: PostgreSQL 13; Python (Numpy, Pandas).
 - **Outcomes**: 1. The data was transformed and prepared to populate the database (*data_transformation folder*); 2. The database was created and populated; 3. The tendencies of the real estate market were analyzed by running the corresponding SQL queries against the database; 4. The complexity and performance of queries were analyzed.
+
+### Project 4: [Insurance Policy Purchase Prediction (Purchase_Pred)]
+- **Objective**: 1. To find out what characteristics define a potential customer mostly; 2. To highlight the features of the policy that correlate with a customer's decision to purchase a policy; 3. To build a binary predicting model to forecast the policy purchasing based on the given features;
+- **Data Source**: The dataset was taken from the [Allstate competition on Kaggle](https://www.kaggle.com/c/allstate-purchase-prediction-challenge/data). It contains 25 features and 665K observations.
+- **Tools Used**: SAS Enterprise Miner; Tableau; Tableau Prep.
+- **Outcomes**: 1. Insights that can help in defining a target audience were visualized as the result of the EDA stage; 2. The dataset was prepared for model building; 3. The number of models (Logistic Regression and Decision Tree) with different feature selection approaches was examined to pick the most optimal model in terms of its complexity and accuracy. 
 
 ## How to Use
 - To run the notebooks, you will need Jupyter Notebook software. To install Jupyter, you can use Python's package manager, pip. First, ensure that you have Python installed on your computer. Then, open your command line or terminal and run the following command: `pip install notebook`. This command will install Jupyter Notebook. After installation, you can start Jupyter Notebook by running `jupyter notebook` in your terminal. This will open the Jupyter Notebook interface in your default web browser, where you can run the notebooks.
