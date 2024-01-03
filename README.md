@@ -41,6 +41,12 @@ Hi, this is Kirill. Welcome to my Data Science Portfolio! This repository contai
 - **Tools Used**: Excel. 
 - **Outcomes**: 1. Identified weaknesses in Steel Dynamics' financial performance by running statistical comparison analysis (Hypothesis one-way ANOVA testing) of 4 competitors' financial metrics; 2. Formulated the recommendations for Steel Dynamics based on the findings;
 
+### Project 7: Maven Roasters Cofee Shop BI Analysis (BI_Analysis)
+- **Objective**: To help a small batch coffee roasting company called Maven Roasters (a fictional name) conduct a business analysis based on their data about customers, employees, stores, and products in order to operate the business more effectively through data-driven business decisions.
+- **Data Source**: This dataset requires a subscription to get acquired, and can only be accessed through the data collection of [Maven Analytics](https://www.linkedin.com/company/maven-analytics/)
+- **Tools Used**: Tableau.
+- **Outcomes**: The Business Intelligence analysis was conducted: 1) the array of helpful data visualizations and dashboards was prepared; 2) The insightful details about their low-selling products were brought to light and store managers' KPIs were formulated.
+
 ## How to Use
 - To run the notebooks, you will need Jupyter Notebook software. To install Jupyter, you can use Python's package manager, pip. First, ensure that you have Python installed on your computer. Then, open your command line or terminal and run the following command: `pip install notebook`. This command will install Jupyter Notebook. After installation, you can start Jupyter Notebook by running `jupyter notebook` in your terminal. This will open the Jupyter Notebook interface in your default web browser, where you can run the notebooks.
 
