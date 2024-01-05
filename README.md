@@ -37,7 +37,7 @@ Hi, this is Kirill. Welcome to my Data Science Portfolio! This repository contai
 
 ### Project 6: Steel Dynamics Financial Analysis (Fin_Analysis)
 - **Objective**: To conduct a financial analysis of Steel Dynamics to statistically examine their financial and business performance compared to their competitors based on the next financial metrics: Contribution Margin Ratio, Operating Leverage Effect, Debt to Equity Ratio, and Financial Leverage.
-- **Data Source**: All financial metrics are available on any financial [website](https://www.macrotrends.net/).
+- **Data Source**: All financial metrics are available on any financial website, like [this one](https://www.macrotrends.net/).
 - **Tools Used**: Excel. 
 - **Outcomes**: 1. Identified weaknesses in Steel Dynamics' financial performance by running statistical comparison analysis (Hypothesis one-way ANOVA testing) of 4 competitors' financial metrics; 2. Formulated the recommendations for Steel Dynamics based on the findings;
 
