@@ -1,0 +1,11 @@
+### Project: Allstate Insurance Policy Purchase Prediction (Policy_Purchase_Pred)
+- **Objective**:
+  - To find out what characteristics define a potential customer mostly;
+  - To highlight the features of the policy that correlate with a customer's decision to purchase a policy;
+  - To build a binary predicting model to forecast the policy purchasing based on the given features.
+- **Data Source**: The dataset was taken from the [Allstate competition on Kaggle](https://www.kaggle.com/c/allstate-purchase-prediction-challenge/data). It contains 25 features and 665K observations.
+- **Tools Used**: 1. SAS Enterprise Miner; 2. Tableau; 3. Tableau Prep Builder.
+- **Outcomes**:
+  - Insights that can help in defining a target audience were visualized as the result of the EDA stage;
+  - The dataset was prepared for model building;
+  - The number of models (Logistic Regression and Decision Tree) with different feature selection approaches was examined to pick the most optimal model in terms of its complexity and accuracy.
