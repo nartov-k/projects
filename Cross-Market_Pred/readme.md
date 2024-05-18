@@ -2,7 +2,12 @@
 - **Objective**:
   - To find patterns of customer cross-market purchases based on EDA and Visualizations for an insurance company;
   - Prepare the dataset for model building;
-  - To find an ML algorithm that provides better binary predictive results out of five: Logistic Regression, Decision Tree, Random Forest, Gradient Boosting, and XGBoost.
+  - To find an ML algorithm that provides better binary predictive results out of five:
+    - Logistic Regression,
+    - Decision Tree,
+    - Random Forest,
+    - Gradient Boosting,
+    - and XGBoost.
 - **Data Source**: The dataset was obtained from [Kaggle](https://www.kaggle.com/datasets/anmolkumar/health-insurance-cross-sell-prediction?resource=download). It contains 12 attributes and 381K observations.
 - **Tools Used**: 1. Python (Numpy, Pandas, Matplotlib, Seaborn, Skikit); 2. Tableau.
 - **Outcomes**:
