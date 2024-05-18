@@ -1,0 +1,13 @@
+### Project: E-Commerce Platform Customer Behavior Analysis (E-Commerce_Cust_Analysis)
+- **Objective**: To capture the insightful details of user behavior over one month of October on an E-Commerce Marketplace through EDA and model building;
+- **Data Source**: The dataset was obtained from [Kaggle](https://www.kaggle.com/ecommerce). It contains 9 attributes and 300K randomly picked observations.
+- **Tools Used**: Python (Numpy, Pandas, Matplotlib, Seaborn, Skikit, Mlxtend).
+- **Outcomes**:
+  - *EDA phase*:
+    - Validated the quality and consistency of data;
+    - Conducted Conversion Analysis and formulated a weak point dealers of sight-attractive items should focus on;
+    - Analyzed Prices and explained why there is no explicit correlation between price and purchases;
+    - Time Series Analysis was conducted to unravel sales patterns over a specific time period;
+  - *Model building phase*:
+      - Conducted Customer Segmentation (k-means clustering) and formulated recommendations to the e-store on how to use this model;
+      - Market Basket Analysis (FP-Growth, Apriori) was applied to uncover the support(frequency) of top products and to find out the association rules.
