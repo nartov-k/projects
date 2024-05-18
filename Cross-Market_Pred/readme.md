@@ -1,0 +1,11 @@
+### Project: Cross-Market Insurance Policy Purchase Prediction (Cross-Market_Pred)
+- **Objective**:
+  - To find patterns of customer cross-market purchases based on EDA and Visualizations for an insurance company;
+  - Prepare the dataset for model building;
+  - To find an ML algorithm that provides better binary predictive results out of five: Logistic Regression, Decision Tree, Random Forest, Gradient Boosting, and XGBoost.
+- **Data Source**: The dataset was obtained from [Kaggle](https://www.kaggle.com/datasets/anmolkumar/health-insurance-cross-sell-prediction?resource=download). It contains 12 attributes and 381K observations.
+- **Tools Used**: 1. Python (Numpy, Pandas, Matplotlib, Seaborn, Skikit); 2. Tableau.
+- **Outcomes**:
+  - The list of insights resulting from the EDA phase was found (*EDA_Visualizations folder*).
+  - The dataset was enriched with 3 new features, one feature was aggregated for the sake of data reduction, and the dataset was resampled to avoid negative bias during the model-building phase;
+  - The random Forest model was the best-performing one out of 5 tested algorithms based on the ROC_AUC, accuracy, and precision measures. (*Models_Permormance_Measures folder*).
