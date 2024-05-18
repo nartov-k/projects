@@ -1,0 +1,14 @@
+### Project: Real Estate Database Building and Analytics (Real_Estate_db)
+- **Objective**:
+  - To design a conceptual model (ER diagram) of a potential Database that can be made up of several smaller datasets taken from the real estate company Zillow;
+  - To translate a conceptual model into an SQL schema by using DDL Statements;
+  - To create a PostgreSQL Database and populate it by using DML Statements;
+  - To write SQL queries to analyze the tendencies of the real estate market;
+  - To analyze the performance of SQL queries.
+- **Data Source**: The dataset consists of 5 files that were downloaded from the [Zillow website](https://www.zillow.com/research/data/).
+- **Tools Used**: 1. PostgreSQL 13; 2. Python (Numpy, Pandas).
+- **Outcomes**:
+  - The data was transformed and prepared to populate the database (*data_transformation folder*);
+  - The database was created and populated;
+  - The tendencies of the real estate market were analyzed by running the corresponding SQL queries against the database;
+  - The complexity and performance of queries were analyzed.
