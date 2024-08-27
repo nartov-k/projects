@@ -1,5 +1,6 @@
 ### Project: Real Estate Database Building and Analytics (Real_Estate_db)
 - **Objective**:
+  - To transform and prepare datasets for database population;
   - To design a conceptual model (ER diagram) of a potential Database that can be made up of several smaller datasets taken from the real estate company Zillow;
   - To translate a conceptual model into an SQL schema by using DDL Statements;
   - To create a PostgreSQL Database and populate it by using DML Statements;
